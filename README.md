@@ -34,18 +34,18 @@ Znaczniki HTML
 
 «B8» Kontakty w <header> (poczta i telefon) znajdują się poza tagiem <nav>.
 
-«B9» Tag <h1> został użyty jeden raz na stronie
+«B9» Tag h1 został użyty jeden raz na stronie
 
 «B10» Element z tekstem "Zamów usługę" - to przycisk z type="button".
 
-«B11» Nagłówki sekcji są oznaczone tagiem <h2>.
+«B11» Nagłówki sekcji są oznaczone tagiem h2.
 
-«B12» Tagi <img> mają atrybuty wymiarów, co najmniej width i height.
+«B12» Tagi img mają atrybuty wymiarów, co najmniej width i height.
 
-«B13» Tagi <img> mają atrybut alt, który jest wypełniony krótkim opisem tego, co jest pokazane na obrazku.
+«B13» Tagi img mają atrybut alt, który jest wypełniony krótkim opisem tego, co jest pokazane na obrazku.
 
 «B14» Obrazy wyeksportowane z układu w formacie jpg.
 
-«B15» Grupy elementów tego samego typu są gromadzone na listach <ul>.
+«B15» Grupy elementów tego samego typu są gromadzone na listach ul.
 
-«B16» Tag <address> został użyty tylko w stopce.
+«B16» Tag address został użyty tylko w stopce.
