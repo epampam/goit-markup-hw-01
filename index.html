@@ -1,171 +1,183 @@
-<style>
-  #tlo {
-    background-image: url("images/tlo.png");
-    height: 300px;
-    width: 100%;
-    position: relative;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
 
-  #lewa-strona {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    margin-left: 200px;
-  }
+<!DOCTYPE html>
+<html lang="en">
 
-  #prawa-strona {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    margin-right: 200px;
-  }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStudio - Tworzenie stron internetowych</title>
+  <style>
+    #tlo {
+      background-image: url("images/tlo.png");
+      height: 300px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #lewa-strona {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      margin-left: 200px;
+    }
+  
+    #prawa-strona {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      margin-right: 200px;
+    }
+  
+    #obrazek {
+      margin-right: 10px;
+    }
+  
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    #menu li {
+      margin-right: 10px;
+    }
+  
+    #kontakt,
+    #numer {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  
+    .lorem {
+      flex: 0 0 50%;
+      max-width: 400px;
+      margin: 20px;
+      text-align: center;
+      padding: 20px;
+    }
+    .lorem-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .lorem h2 {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    .lorem p {
+      text-align: justify;
+      font-style: italic;
+    }
+  
+    .obrazki {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .obrazki img {
+      margin: 0 10px;
+      display: block;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+  
+    .obrazki2 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    .obrazki2 .obrazek-container {
+      position: relative;
+      margin: 0 50px;
+    }
+  
+    .obrazki2 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .obrazki2 .opis-container {
+      position: absolute;
+      bottom: -90px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .opis1 {
+      font-weight: bold;
+    }
+  
+    .obrazki2 .opis {
+      display: inline-block;
+      color: black;
+      padding: 10px;
+      margin: 0;
+    }
+  
+    #footer {
+      background-color: #333;
+      color: white;
+      padding: 50px;
+      margin-top: 90px;
+    }
+  
+    #footer img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    #footer p {
+      margin: 0;
+    }
+    #header {
+      background-color: white;
+      width: 100%;
+      height: 40px;
+      position: relative;
+      top: 0;
+      color: black;
+    }
+    .button {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    h1 {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+  </style>
+</head>
 
-  #obrazek {
-    margin-right: 10px;
-  }
 
-  #menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-
-  #menu li {
-    margin-right: 10px;
-  }
-
-  #kontakt,
-  #numer {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  .lorem {
-    flex: 0 0 50%;
-    max-width: 400px;
-    margin: 20px;
-    text-align: center;
-    padding: 20px;
-  }
-  .lorem-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .lorem h2 {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .lorem p {
-    text-align: justify;
-    font-style: italic;
-  }
-
-  .obrazki {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .obrazki img {
-    margin: 0 10px;
-    display: block;
-    margin-bottom: 20px;
-    margin-left: 0px;
-  }
-
-  .obrazki2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .obrazki2 .obrazek-container {
-    position: relative;
-    margin: 0 50px;
-  }
-
-  .obrazki2 img {
-    width: 100%;
-    height: auto;
-  }
-
-  .obrazki2 .opis-container {
-    position: absolute;
-    bottom: -90px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .opis1 {
-    font-weight: bold;
-  }
-
-  .obrazki2 .opis {
-    display: inline-block;
-    color: black;
-    padding: 10px;
-    margin: 0;
-  }
-
-  #footer {
-    background-color: #333;
-    color: white;
-    padding: 50px;
-    margin-top: 90px;
-  }
-
-  #footer img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  #footer p {
-    margin: 0;
-  }
-  #header {
-    background-color: white;
-    width: 100%;
-    height: 40px;
-    position: relative;
-    top: 0;
-    color: black;
-  }
-  .button {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  h1 {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-  }
-</style>
+<body>
 <div id="header">
   <div id="lewa-strona">
     <img src="images/webstudio.jpg" id="obrazek" />
@@ -292,3 +304,5 @@
     </div>
   </div>
 </div>
+</body>
+</html>
