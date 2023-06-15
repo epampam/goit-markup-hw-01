@@ -2,7 +2,7 @@
   #tlo {
     background-image: url("images/tlo.png");
     height: 300px;
-    width: 1600px;
+    width: 100%;
     position: relative;
     text-align: center;
     color: white;
@@ -54,10 +54,17 @@
   }
 
   .lorem {
-    width: 25%;
-    float: left;
+    flex: 0 0 50%;
+    max-width: 400px;
+    margin: 20px;
     text-align: center;
-    margin-top: 100px;
+    padding: 20px;
+  }
+  .lorem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .lorem h2 {
@@ -182,36 +189,38 @@
 
 <div style="clear: both"></div>
 
-<div class="lorem">
-  <h2>LOREM IPSUM</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-    Sed non sodales dui. Interdum et malesuada.
-  </p>
-</div>
+<div class="lorem-container">
+  <div class="lorem">
+    <h2>LOREM IPSUM</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+      Sed non sodales dui. Interdum et malesuada.
+    </p>
+  </div>
 
-<div class="lorem">
-  <h2>LOREM IPSUM</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-    Sed non sodales dui. Interdum et malesuada.
-  </p>
-</div>
+  <div class="lorem">
+    <h2>LOREM IPSUM</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+      Sed non sodales dui. Interdum et malesuada.
+    </p>
+  </div>
 
-<div class="lorem">
-  <h2>LOREM IPSUM</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-    Sed non sodales dui. Interdum et malesuada.
-  </p>
-</div>
+  <div class="lorem">
+    <h2>LOREM IPSUM</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+      Sed non sodales dui. Interdum et malesuada.
+    </p>
+  </div>
 
-<div class="lorem">
-  <h2>LOREM IPSUM</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
-    Sed non sodales dui. Interdum et malesuada.
-  </p>
+  <div class="lorem">
+    <h2>LOREM IPSUM</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+      Sed non sodales dui. Interdum et malesuada.
+    </p>
+  </div>
 </div>
 
 <div id="czym-zajmujemy">
