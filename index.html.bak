@@ -1,6 +1,6 @@
 <style>
   #tlo {
-    background-image: url('tlo.png');
+    background-image: url('images/tlo.png');
     height: 300px;
     width: 1600px;
     position: relative;
